@@ -21,12 +21,6 @@
 
 > ▶️ 전체 UI 화면은 `screenshots/` 폴더를 참고하세요.
 
-예시:
-
-- `screenshots/main_screen.png` : 메인 캐릭터 화면  
-- `screenshots/quest_register.png` : 퀘스트 등록 UI  
-- `screenshots/quest_list.png` : 퀘스트 목록 화면  
-- `screenshots/character_status.png` : 캐릭터 상세 정보  
 
 ---
 
