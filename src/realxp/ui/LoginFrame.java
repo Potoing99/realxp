@@ -36,7 +36,7 @@ public class LoginFrame extends JFrame {
         JPanel panel = new JPanel(new GridLayout(3, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
 
-        JLabel idLabel = new JLabel("아이디:");
+        JLabel idLabel = new JLabel("ID:");
         idLabel.setFont(font);
         idField = new JTextField();
         idField.setFont(font);
@@ -75,7 +75,7 @@ public class LoginFrame extends JFrame {
         String pw = new String(pwField.getPassword()).trim();
 
         if (id.isEmpty() || pw.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "아이디와 비밀번호를 모두 입력하세요.");
+            JOptionPane.showMessageDialog(this, "ID와 비밀번호를 모두 입력하세요.");
             return;
         }
 
@@ -85,7 +85,7 @@ public class LoginFrame extends JFrame {
             dispose();
             new MainFrame(user, userService, questService);  // 로그인 성공 시 메인화면으로
         } else {
-            JOptionPane.showMessageDialog(this, "로그인 실패: 아이디 또는 비밀번호가 올바르지 않습니다.");
+            JOptionPane.showMessageDialog(this, "로그인 실패: ID 또는 비밀번호가 올바르지 않습니다.");
         }
     }
 }

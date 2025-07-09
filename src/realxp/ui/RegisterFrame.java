@@ -35,24 +35,19 @@ public class RegisterFrame extends JFrame {
         JPanel panel = new JPanel(new GridLayout(4, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
 
-        JLabel idLabel = new JLabel("아이디:");
-        idLabel.setFont(font);
-        idField = new JTextField();
-        idField.setFont(font);
-
+        JLabel nameLabel = new JLabel("ID:");
+        nameLabel.setFont(font);
+        nameField = new JTextField();
+        nameField.setFont(font);
+        
         JLabel pwLabel = new JLabel("비밀번호:");
         pwLabel.setFont(font);
         pwField = new JPasswordField();
         pwField.setFont(font);
 
-        JLabel nameLabel = new JLabel("닉네임:");
-        nameLabel.setFont(font);
-        nameField = new JTextField();
-        nameField.setFont(font);
 
-        panel.add(idLabel); panel.add(idField);
-        panel.add(pwLabel); panel.add(pwField);
         panel.add(nameLabel); panel.add(nameField);
+        panel.add(pwLabel); panel.add(pwField);
 
         JButton registerBtn = new JButton("가입하기");
         registerBtn.setFont(font);

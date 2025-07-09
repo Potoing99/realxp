@@ -63,7 +63,7 @@ public class MainFrame extends JFrame {
         myCharacterButton.addActionListener(e ->
             JOptionPane.showMessageDialog(
                 this,
-                String.format("닉네임: %s\n레벨: %d\n경험치: %d / %d",
+                String.format("ID: %s\n레벨: %d\n경험치: %d / %d",
                     loginUser.getUsername(),
                     character.getLevel(),
                     character.getExp(),
@@ -93,7 +93,7 @@ public class MainFrame extends JFrame {
     public void refreshInfo() {
         MyCharacter character = loginUser.getCharacter();
         String html = String.format(
-            "<html><div style='text-align:center;'>닉네임: %s<br>레벨: %d<br>경험치: %d / %d</div></html>",
+            "<html><div style='text-align:center;'>ID: %s<br>레벨: %d<br>경험치: %d / %d</div></html>",
             loginUser.getUsername(),
             character.getLevel(),
             character.getExp(),
