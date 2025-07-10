@@ -60,7 +60,7 @@ public class LoginFrame extends JFrame {
         registerButton.setFont(font);
         registerButton.addActionListener(e -> {
             dispose();
-            new RegisterFrame(userService, questService); // RegisterFrame은 다음 단계에서 만듦
+            new RegisterFrame(userService, questService);
         });
 
         panel.add(loginButton);
